@@ -12,9 +12,29 @@ body{
     font-family: 'Lato', sans-serif;
     .page-header{
         background: #789900!important;
+        &:before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.33);
+            -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.33);
+            box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.33);
+            transition: all 0.2s ease-out;
+        }
         .navbar{
             a{
                 color:white;
+            }
+            .navbar-toggler{
+                border: none;
+                outline: 0;
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+                }
             }
         }
         .nav-link{
@@ -24,11 +44,13 @@ body{
     .starter{
         background-color: #8080801c;
         padding: 10px;
+        padding: 70px 10px 10px 10px;
         a{
             color:#04aa4e;
         }
     }
     .banner{
+        border-radius: 0px;
         background: #789900;
         color: white;
     }

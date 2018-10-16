@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <div class="container-fluid page-header">
+  <div class="container-fluid page-header fixed-top">
     <div class="container">
-      <nav class="navbar navbar-dark navbar-expand-lg ">
+      <nav class="navbar  navbar-dark navbar-expand-lg ">
         <a class="navbar-brand" href="#">
           <img src="assets/kiwi4.png" width="30" height="30" class="d-inline-block align-top" alt="">
           kiwi server
@@ -38,15 +38,13 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li>
-              <a class="btn btn-primary" href="https://www.npmjs.com/package/kiwi-server" target="_blank" role="button">Start Now</a>
+              <a class="btn btn-primary" href="https://www.npmjs.com/package/kiwi-server" target="_blank" role="button">Start
+                Now</a>
             </li>
           </ul>
 
       </nav>
     </div>
-
-  </div>
-  </div>
   </div>
   <div class="container-fluid starter">
     <div class="container">
@@ -197,8 +195,18 @@
         </div>
       </div>
       <div class="row justify-content-center">
-        <div>
-          <a class="btn btn-primary" href="mailto:guillermo.fernandez@cavepot.com" role="button">Become a sponsor</a>
+        <div class="d-flex flex-column">
+          <div class="p-2">
+            <a class="btn btn-primary" href="mailto:info@cavepot.com" role="button">Become a sponsor</a>
+          </div>
+          <div class="p-2">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="VDHNS4UXDL7U8">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
+                alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+          </div>
         </div>
       </div>
     </div>
@@ -221,7 +229,7 @@
           </h5>
           <ul class="section_footer__info">
             <li>
-              <i class="fa fa-map-marker"></i> 122 Pablo de Maria, Montevideo, Uruguay
+              <i class="fa fa-map-marker"></i> 1122 Pablo de Maria, Montevideo, Uruguay
             </li>
             <li>
               <i class="fa fa-phone"></i> +598 2409 6432
@@ -247,6 +255,25 @@
 
     gtag('config', 'UA-84702798-3');
   </script>
-</body>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5S5TX2K');</script>
+  <!-- End Google Tag Manager -->
+
+
+  Pegue también este código inmediatamente después de la etiqueta
+
+  <body> de apertura:
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S5TX2K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
 
 </html>
